@@ -1,0 +1,352 @@
+[
+     {
+          "csv_output_item_key": "tqdm:7:metallaxis",
+          "generalized_e_inspect": 921.0,
+          "output_length": 16
+     },
+     {
+          "csv_output_item_key": "thefuck:14:st",
+          "generalized_e_inspect": 424.6666666666667,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:ps",
+          "generalized_e_inspect": 82.0909090909091,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:ps",
+          "generalized_e_inspect": 764.0,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "keras:33:ochiai",
+          "generalized_e_inspect": 1.6666666666666665,
+          "output_length": 963
+     },
+     {
+          "csv_output_item_key": "thefuck:14:ps",
+          "generalized_e_inspect": 424.6666666666667,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:ochiai",
+          "generalized_e_inspect": 3.0,
+          "output_length": 287
+     },
+     {
+          "csv_output_item_key": "tqdm:7:muse",
+          "generalized_e_inspect": 921.0,
+          "output_length": 16
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:tarantula",
+          "generalized_e_inspect": 2.5,
+          "output_length": 125
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:metallaxis",
+          "generalized_e_inspect": 764.5,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "keras:33:dstar",
+          "generalized_e_inspect": 1.6666666666666665,
+          "output_length": 963
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:ochiai",
+          "generalized_e_inspect": 36.66666666666667,
+          "output_length": 189
+     },
+     {
+          "csv_output_item_key": "pandas:77:muse",
+          "generalized_e_inspect": 41773.666666666664,
+          "output_length": 11
+     },
+     {
+          "csv_output_item_key": "black:3:ps",
+          "generalized_e_inspect": 45662.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "black:3:tarantula",
+          "generalized_e_inspect": 46853.5,
+          "output_length": 2382
+     },
+     {
+          "csv_output_item_key": "fastapi:16:ochiai",
+          "generalized_e_inspect": 1.0,
+          "output_length": 42
+     },
+     {
+          "csv_output_item_key": "fastapi:16:metallaxis",
+          "generalized_e_inspect": 1.0,
+          "output_length": 2
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:tarantula",
+          "generalized_e_inspect": 3.0,
+          "output_length": 287
+     },
+     {
+          "csv_output_item_key": "black:3:st",
+          "generalized_e_inspect": 45662.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "tqdm:7:dstar",
+          "generalized_e_inspect": 933.0,
+          "output_length": 40
+     },
+     {
+          "csv_output_item_key": "black:3:ochiai",
+          "generalized_e_inspect": 46853.5,
+          "output_length": 2382
+     },
+     {
+          "csv_output_item_key": "keras:33:tarantula",
+          "generalized_e_inspect": 1.6666666666666665,
+          "output_length": 963
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:muse",
+          "generalized_e_inspect": 764.5,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "tqdm:7:ps",
+          "generalized_e_inspect": 913.0,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "tqdm:7:st",
+          "generalized_e_inspect": 958.0,
+          "output_length": 90
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:st",
+          "generalized_e_inspect": 82.0909090909091,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:tarantula",
+          "generalized_e_inspect": 36.66666666666667,
+          "output_length": 189
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:dstar",
+          "generalized_e_inspect": 36.66666666666667,
+          "output_length": 189
+     },
+     {
+          "csv_output_item_key": "pandas:77:dstar",
+          "generalized_e_inspect": 14.0,
+          "output_length": 27
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:st",
+          "generalized_e_inspect": 8536.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "fastapi:16:tarantula",
+          "generalized_e_inspect": 1.0,
+          "output_length": 42
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:dstar",
+          "generalized_e_inspect": 3.0,
+          "output_length": 287
+     },
+     {
+          "csv_output_item_key": "fastapi:16:dstar",
+          "generalized_e_inspect": 1.0,
+          "output_length": 42
+     },
+     {
+          "csv_output_item_key": "tqdm:7:ochiai",
+          "generalized_e_inspect": 933.0,
+          "output_length": 40
+     },
+     {
+          "csv_output_item_key": "httpie:5:ps",
+          "generalized_e_inspect": 75.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "httpie:5:muse",
+          "generalized_e_inspect": 1.0,
+          "output_length": 17
+     },
+     {
+          "csv_output_item_key": "tqdm:7:tarantula",
+          "generalized_e_inspect": 933.0,
+          "output_length": 40
+     },
+     {
+          "csv_output_item_key": "thefuck:14:muse",
+          "generalized_e_inspect": 1.0,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "black:3:muse",
+          "generalized_e_inspect": 45665.0,
+          "output_length": 5
+     },
+     {
+          "csv_output_item_key": "keras:33:ps",
+          "generalized_e_inspect": 7669.2,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:dstar",
+          "generalized_e_inspect": 2.5,
+          "output_length": 125
+     },
+     {
+          "csv_output_item_key": "httpie:5:metallaxis",
+          "generalized_e_inspect": 8.0,
+          "output_length": 17
+     },
+     {
+          "csv_output_item_key": "httpie:5:st",
+          "generalized_e_inspect": 75.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "pandas:77:ochiai",
+          "generalized_e_inspect": 14.0,
+          "output_length": 27
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:ps",
+          "generalized_e_inspect": 8536.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:muse",
+          "generalized_e_inspect": 83.0,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "thefuck:14:metallaxis",
+          "generalized_e_inspect": 1.0,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "fastapi:16:muse",
+          "generalized_e_inspect": 1.5,
+          "output_length": 2
+     },
+     {
+          "csv_output_item_key": "fastapi:16:ps",
+          "generalized_e_inspect": 211.5,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "cookiecutter:1:st",
+          "generalized_e_inspect": 21.5,
+          "output_length": 42
+     },
+     {
+          "csv_output_item_key": "keras:33:muse",
+          "generalized_e_inspect": 1.3333333333333333,
+          "output_length": 3
+     },
+     {
+          "csv_output_item_key": "httpie:5:dstar",
+          "generalized_e_inspect": 4.0,
+          "output_length": 149
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:metallaxis",
+          "generalized_e_inspect": 8537.5,
+          "output_length": 2
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:ochiai",
+          "generalized_e_inspect": 2.5,
+          "output_length": 125
+     },
+     {
+          "csv_output_item_key": "cookiecutter:4:metallaxis",
+          "generalized_e_inspect": 83.0,
+          "output_length": 1
+     },
+     {
+          "csv_output_item_key": "pandas:77:ps",
+          "generalized_e_inspect": 41766.333333333336,
+          "output_length": 0
+     },
+     {
+          "csv_output_item_key": "pandas:77:metallaxis",
+          "generalized_e_inspect": 41773.666666666664,
+          "output_length": 11
+     },
+     {
+          "csv_output_item_key": "youtube-dl:43:muse",
+          "generalized_e_inspect": 8537.5,
+          "output_length": 2
+     },
+     {
+          "csv_output_item_key": "black:3:metallaxis",
+          "generalized_e_inspect": 45665.0,
+          "output_length": 5
+     },
+     {
+          "csv_output_item_key": "keras:33:metallaxis",
+          "generalized_e_inspect": 1.0,
+          "output_length": 3
+     },
+     {
+          "csv_output_item_key": "black:3:dstar",
+          "generalized_e_inspect": 46853.5,
+          "output_length": 2382
+     },
+     {
+          "csv_output_item_key": "thefuck:14:ochiai",
+          "generalized_e_inspect": 1.0,
+          "output_length": 79
+     },
+     {
+          "csv_output_item_key": "fastapi:16:st",
+          "generalized_e_inspect": 6.0,
+          "output_length": 71
+     },
+     {
+          "csv_output_item_key": "thefuck:14:dstar",
+          "generalized_e_inspect": 1.0,
+          "output_length": 79
+     },
+     {
+          "csv_output_item_key": "pandas:77:tarantula",
+          "generalized_e_inspect": 14.0,
+          "output_length": 27
+     },
+     {
+          "csv_output_item_key": "keras:33:st",
+          "generalized_e_inspect": 5.2,
+          "output_length": 25
+     },
+     {
+          "csv_output_item_key": "httpie:5:ochiai",
+          "generalized_e_inspect": 4.0,
+          "output_length": 149
+     },
+     {
+          "csv_output_item_key": "httpie:5:tarantula",
+          "generalized_e_inspect": 4.0,
+          "output_length": 149
+     },
+     {
+          "csv_output_item_key": "thefuck:14:tarantula",
+          "generalized_e_inspect": 1.0,
+          "output_length": 79
+     },
+     {
+          "csv_output_item_key": "pandas:77:st",
+          "generalized_e_inspect": 13.333333333333334,
+          "output_length": 39
+     }
+]
