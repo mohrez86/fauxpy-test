@@ -13,7 +13,7 @@ named according to the version,
 such as 
 `v[major version]_[minor version]`.
 For example, FauxPy version 0.1
-is located in the `v_0_1` directory.
+is located in the `v0_1` directory.
 
 Within each version directory, 
 you will find the source code for
@@ -212,17 +212,135 @@ effects.
 
 ## How to Execute Tests
 
-The tests are done on two
-different version: the
-previous version `$previos` and
-the current version `$current`.
+Testing involves running 
+comparisons between two 
+different versions: 
+the previous version (`$previous`)
+and 
+the current version (`$current`).
+For example, 
+the previous version might
+be `v0_0`, while the current
+version could be `v0_1`.
 
-to do that, first clone
-this repository and navigate
-to the `fauxpy-test/versions` directory.
+In the steps below, we'll 
+demonstrate how to execute 
+the `tiny` test scenario. 
+The process for running 
+the other two scenarios,
+`small` and `large`, 
+is similar.
 
-```bash
-git@github.com:mohrez86/fauxpy-test.git
-cd fauxpy-test
-```
+1. First, clone this 
+repository and navigate
+to the 
+`fauxpy-test/versions` 
+directory.
 
+   ```bash
+   git clone git@github.com:mohrez86/fauxpy-test.git
+   cd fauxpy-test/versions
+   ```
+
+2. Create a Python environment
+within the 
+`version` directory 
+and activate it:
+
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   ```
+
+3. Navigate to the previous 
+version directory 
+(e.g., `v0_0`) and 
+execute the script for
+the selected scenario.
+For instance, for the
+`tiny` test scenario,
+run `run_tiny_scripts.sh`.
+
+   ```bash
+   cd $previuos
+   ./run_tiny_scripts.sh
+   ```
+
+When the script finishes,
+you can find the results
+produced by FauxPy for 
+each project in directories
+named after each project
+(e.g., `black`) within
+the directory 
+containing the scripts
+(e.g., `scripts_tiny`).
+
+4. While you are inside the
+`$previous` directory, 
+run `main.py` using 
+the following command:
+
+   ```bash
+   python main.py -e tiny
+   ```
+
+In the above script,
+`tiny` indicates that
+we are executing the 
+tiny test scenario. 
+Running this script will
+create a directory named
+`csv_output_tiny` within
+`$previous`, which will 
+contain the output of 
+each fault localization 
+session in `.csv` files.
+
+5. Next, navigate to 
+the `$current` directory 
+(e.g., `v0_1`) and 
+repeat the same 
+steps.
+
+   ```bash
+   cd ../$previuos
+   ./run_tiny_scripts.sh
+   python main.py -e tiny
+   ```
+
+6. Now, return to the
+`versions` directory 
+and execute `main.py` 
+with the following 
+command:
+
+   ```bash
+   cd ..
+   python main.py -e tiny -p $previous -c $current
+   ```
+
+Running the above command 
+generates and saves feature 
+files for both FauxPy 
+versions in the
+`extracted_features` 
+directory.
+
+The script also checks the
+features of these two 
+versions for inconsistencies.
+The final output will
+indicate whether the 
+current version's output
+matches the previous 
+version's output.
+For example, 
+a message like 
+`Output of v0_1 is
+equivalent to the
+output of v0_0` 
+means that the current 
+version is consistent 
+with the previous 
+one.
