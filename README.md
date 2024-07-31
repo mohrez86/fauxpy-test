@@ -1,7 +1,6 @@
 # Testing FauxPy with Real-World Projects
 
 ![GitHub](https://img.shields.io/github/license/mohrez86/fauxpy-test)
-[![Hits-of-Code](https://hitsofcode.com/github/mohrez86/fauxpy-test?branch=main)](https://hitsofcode.com/github/mohrez86/fauxpy-test/view?branch=main)
 
 *The infrastructure scripts in this
 repository have been tested 
