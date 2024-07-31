@@ -1,19 +1,31 @@
 # Testing FauxPy with Real-World Projects
 
-*The scripts in this repository have been
-tested with Python 3.12.*
+![GitHub](https://img.shields.io/github/license/mohrez86/fauxpy-test)
+[![Hits-of-Code](https://hitsofcode.com/github/mohrez86/fauxpy-test?branch=main)](https://hitsofcode.com/github/mohrez86/fauxpy-test/view?branch=main)
 
-This repository aims to test FauxPy on 
-real-world projects. Our goal is to
+*The infrastructure scripts in this
+repository have been tested 
+with Python 3.12.*
+
+This repository is for testing FauxPy
+on real-world projects
+as *our top priority* is ensuring 
+FauxPy works effectively on 
+real-world Python projects.
+
+Our goal is to
 ensure that each new release of FauxPy
-does not introduce regression bugs
+introduces no regression bugs
 and maintains its functionality.
 To achieve this, we run FauxPy on
 several real-world projects and compare
 its output with previous versions.
 
-Here is the current list 
-of projects we use to test FauxPy:
+Here is the current list of 
+projects used to test 
+FauxPy, provided in the 
+[BugsInPy](https://github.com/soarsmu/BugsInPy) 
+framework of real-world Python bugs:
 
 - [black](https://github.com/psf/black)
 - [cookiecutter](https://github.com/cookiecutter/cookiecutter)
@@ -32,20 +44,31 @@ of projects we use to test FauxPy:
 
 ## About FauxPy
 
-FauxPy is a multi-family fault
-localization tool for Python
-programs. For more information, visit
-FauxPy's
+To the best of our knowledge, 
+FauxPy is the first
+multi-family fault
+localization tool for Python 
+programs that is available 
+as open-source software. 
+For more information, 
+visit FauxPy's 
 [repository](https://github.com/atom-sw/fauxpy)
 and its 
 [documentation](https://fauxpy.readthedocs.io).
 
 ## Repository Structure
 
-This repository is organized into the following directories:
+This repository is organized into the 
+following directories:
 
-- [bash_script_generator](bash_script_generator): Contains code to generate the bash scripts used to run FauxPy with different real-world projects.
-- [versions](versions): Contains different versions of FauxPy and scripts to test FauxPy by running it on various real-world projects.
+- [bash_script_generator](bash_script_generator): Contains code to
+generate the bash scripts used to
+run FauxPy with different 
+real-world projects.
+- [versions](versions): Contains different
+versions of FauxPy and scripts 
+to test FauxPy by running it on 
+various real-world projects.
 
 ## The Testing Procedure
 
@@ -72,5 +95,10 @@ by Mohammad Rezaalipour and
 Carlo A. Furia.
 
 ## Mirror
-This repository serves as a public mirror of 
-our fauxpy-test private repository.
+
+This repository is a public mirror of
+our private fauxpy-test repository.
+We have made this repository available
+to anyone who wishes to contribute
+to improving FauxPy through their 
+own projects.
