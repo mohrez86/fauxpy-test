@@ -1,94 +1,145 @@
 # Testing Various Versions
 
-All testing takes place within this directory.
+## Table of Contents
+- [Big Picture](#big-picture)
+- [Details on Materials](#details-on-materials)
+  - [Version Directories](#version-directories)
+  - [Subject Scripts and Testing Scenarios](#subject-scripts-and-testing-scenarios)
+  - [Feature Extraction](#feature-extraction)
+- [Required Setup](#required-setup)
+- [How to Execute Tests](#how-to-execute-tests)
 
-## The Big Picture
+## Big Picture
 
-Here’s a high-level overview of the
-testing process: 
+Let's say we have a new version of
+FauxPy ready for release. We need
+to verify two key aspects:
+
+1. Ensure the new version runs on real-world
+programs without crashing.
+2. Confirm that the results produced by the new
+version are consistent with those from the 
+previous version. This helps us ensure no
+regressions occurred during development.
+
+To accomplish this, we run the new version
+with a selection of real-world Python projects,
+checking for successful execution without 
+crashes.
+
+Next, we extract features from the results
+produced by the new version of FauxPy 
+for each project and 
+compare them to the same features 
+extracted from the results produced by
+the previous version of FauxPy using the same 
+projects.
+
+We expect the features for both 
+FauxPy versions to match.
+If any discrepancies arise, further 
+investigation is necessary to determine 
+why the new version of FauxPy
+is not consistent with 
+the previous one.
+
+## Details on Materials
+
+In the following we introduce the
+materials and concepts for this
+testing activity.
+
+### Version Directories
 
 For each version of
 FauxPy, there is a dedicated directory
-named according to the version,
-such as 
-`v[major version]_[minor version]`.
+named `vX_Y`, where
+`X` and `Y` are the major
+and minor versions of FauxPy 
+in that directory.
 For example, FauxPy version 0.1
-is located in the `v0_1` directory.
+is located in the [v0_1](v0_1) directory.
 
-Within each version directory, 
-you will find the source code for
-that specific version of FauxPy
-along with scripts designed to run
-FauxPy with real-world programs.
-These scripts are identical to 
-those generated in the 
-[bash_script_generator](../bash_script_generator) 
+### Subject Scripts and Testing Scenarios
+
+We have defined three testing scenarios 
+to test each version of FauxPy. Each 
+scenario involves running a subset of
+the subject scripts created in
+[bash_script_generator](../bash_script_generator). 
+
+The three scenarios are as follows 
+(currently, only `tiny` is configured):
+
+- `tiny`: Should finish within 5 hours on 
+  a personal laptop.
+- `small`: Must include at least one subject from the 
+  projects listed in [README.md](../README.md) and
+  is expected 
+  to finish within 24 hours on a personal laptop.
+- `large`: Runs all subject scripts generated in 
+  [bash_script_generator](../bash_script_generator) 
+  with no time limit.
+
+Within each version directory `vX_Y`,
+and for each testing scenario `SCENARIO`,
+there is a corresponding directory named
+`scripts_SCENARIO`.
+
+For example, for FauxPy 0.1,
+the directory for the `tiny` test scenario
+is `scripts_tiny`, located in
+[v0_1/scripts_tiny](v0_1/scripts_tiny).
+
+Additionally, in each version directory
+`vx_y`,
+for each testing
+scenario `SCENARIO`,
+there is a bash script named
+`run_SCENARIO_scripts.sh`
+(e.g.,
+[v0_1/run_tiny_scripts.sh](v0_1/run_tiny_scripts.sh))
+that simply executes all the scripts
+for that specific testing scenario.
+
+### Feature Extraction
+
+After running the current and 
+previous versions of FauxPy 
+with all subject scripts 
+for a given testing scenario, 
+we extract features from their outputs,
+which are saved
+in the 
+[extracted_features](extracted_features)
 directory.
 
-We have defined three testing scenarios
-for each version
-(currently, only Tiny has been configured):
+The features are stored in files named
+`vX_Y_SCENARIO_fl_features.json`
+(e.g.,
+[v0_1_tiny_fl_features.json](extracted_features/v0_1_tiny_fl_features.json)).
+Here, `X` and `Y` denote the major
+and minor versions of FauxPy,
+while `SCENARIO` refers to the specific
+testing scenario from which the features are extracted.
 
-- **Tiny**: Expected to complete in
-less than 5 hours on a personal laptop.
-- **Small**: Must include at least one
-subject from the list of 
-projects provided in
-the root [README.md](../README.md) 
-file and is expected to finish
-within 24 hours on a personal laptop.
-- **Large**: Designed to run all 
-scripts in the 
-[scripts](../bash_script_generator/scripts) 
-directory.
+By comparing these feature files,
+we check for inconsistencies 
+between the current and previous 
+versions of FauxPy.
 
-For each testing scenario, there 
-is a corresponding directory 
-named 
-`scripts_[test scenario name]`. 
-For example, the directory for 
-the tiny test scenario is 
-`scripts_tiny` (located at 
-`v_0_1/scripts_tiny`). 
-Additionally, each testing scenario 
-has a bash script named
-`run_[test scenario name]_scripts.sh` 
-that executes all the scripts
-for that specific test scenario.
+Currently, we focus on two specific features:
 
-After running all the scripts for
-a given test scenario, we extract features
-from the output generated by FauxPy. 
-We follow the same procedure for the
-previous version of FauxPy.
+1. *Generalized E_Inspect*
+2. *Output Length*
 
-We then compare these features between
-two different versions to 
-ensure consistency. 
-Any discrepancies may indicate
-potential issues that need 
-further investigation.
+These features are fault localization evaluation metrics outlined in the paper
+["An Empirical Study of Fault Localization in Python Programs"](https://doi.org/10.1007/s10664-024-10475-3) 
+by Mohammad Rezaalipour and Carlo A. Furia.
 
-At present, we focus on two
-specific features: 
-*Generalized E_Inspect* 
-and *Output Length*. 
-These features are two
-fault localization 
-evaluation metrics
-described in
-the paper
-["An Empirical Study
-of Fault Localization 
-in Python Programs"](https://doi.org/10.1007/s10664-024-10475-3)
-by Mohammad Rezaalipour 
-and Carlo A. Furia.
-We plan to incorporate 
-additional features in 
-the future to enable more
-comprehensive testing.
+In the future, we plan to add more features for more comprehensive testing.
 
-## Required Set up
+## Required Setup
 
 The scripts for running FauxPy are 
 designed to work with projects from
