@@ -97,7 +97,3 @@ Carlo A. Furia.
 
 This repository is a public mirror of
 our private fauxpy-test repository.
-We have made this repository available
-to anyone who wishes to contribute
-to improving FauxPy through their 
-own projects.
